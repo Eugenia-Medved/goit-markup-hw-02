@@ -1,0 +1,70 @@
+:root {
+  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --title-text-color: #000000;
+  --accent-color: #2196f3;
+  --primary-white-color: #ffffff;
+}
+/* Глобальные стили */
+body {
+  background-color: var(--primary-white-color);
+  color: var(--primary-text-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+ul {
+  list-style-type: none;
+}
+/* Активности */
+.logo {
+  color: var(--title-text-color);
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+}
+
+.logo-web {
+  color: #2196f3;
+}
+
+.logo:hover,
+.logo:focus,
+.link:hover,
+.link:focus {
+  color: var(--accent-color);
+}
+
+.link.current {
+  color: var(--accent-color);
+}
+
+.list-icon-item:hover,
+.list-icon-item:focus {
+  color: var(--accent-color);
+}
+
+/* Герой */
+.hero-title {
+  color: var(--primary-white-color);
+}
+
+.title {
+  color: var(--title-text-color);
+}
+
+/* Текст */
+
+.section-title {
+  color: var(--title-text-color);
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+}
