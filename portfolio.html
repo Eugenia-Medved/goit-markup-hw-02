@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Web Studio</title>
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- Шапка -->
     <header>
       <nav>
         <a href="/" class="logo"> <span class="logo-web">Web</span> Studio </a>
@@ -25,7 +30,7 @@
         </address>
       </nav>
     </header>
-    <main>
+    <main class="portfolio">
       <h1>Портфолио</h1>
       <ul>
         <li><button type="button">Все</button></li>
@@ -39,8 +44,8 @@
           <a href="#">
             <img src="./image/LaptopSkreen.jpg" alt="Laptop Skreen" width="370" />
             <h2>Технокряк</h2>
-            <p>Веб-сайт</p>
-            <p>
+            <p class="portfolio-kind">Веб-сайт</p>
+            <p class="portfolio-text-about">
               Технокряк это современная площадка распространения коронавируса. Компании используют
               эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.
             </p>
@@ -50,8 +55,8 @@
           <a href="#">
             <img src="./image/BasketballPlayers.jpg" alt="Basketball Players" width="370" />
             <h2>Постер New Orlean vs Golden Star</h2>
-            <p>Дизайн</p>
-            <p>
+            <p class="portfolio-kind">Дизайн</p>
+            <p class="portfolio-text-about">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet atque sunt
               expedita sed assumenda corporis nulla, necessitatibus, deleniti esse temporibus
               cupiditate minus omnis, alias quam nobis deserunt in doloribus?
@@ -62,8 +67,8 @@
           <a href="#">
             <img src="./image/LogoSeafood.jpg" alt="Logo Seafood" width="370" />
             <h2>Ресторан Seafood</h2>
-            <p>Приложение</p>
-            <p>
+            <p class="portfolio-kind">Приложение</p>
+            <p class="portfolio-text-about">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, optio quo ipsum quis
               facilis deserunt esse nobis assumenda repudiandae veniam accusamus hic a non in natus?
               Nobis rerum accusantium quibusdam.
@@ -74,8 +79,8 @@
           <a href="#">
             <img src="./image/headphones.jpg" alt="headphones" width="370" />
             <h2>Проект Prime</h2>
-            <p>Маркетинг</p>
-            <p>
+            <p class="portfolio-kind">Маркетинг</p>
+            <p class="portfolio-text-about">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nesciunt vitae
               itaque, nam a sit odit dicta quaerat quam iste aut deserunt fugit reiciendis aperiam
               modi perferendis at dolor dolorum!
@@ -86,8 +91,8 @@
           <a href="#">
             <img src="./image/Boxes.jpg" alt="Boxes" width="370" />
             <h2>Проект Boxes</h2>
-            <p>Приложение</p>
-            <p>
+            <p class="portfolio-kind">Приложение</p>
+            <p class="portfolio-text-about">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro esse totam culpa iusto
               dolore, provident repellat ducimus veniam nam impedit inventore animi fugit atque?
               Tempore minima aut obcaecati sint quasi.
@@ -99,8 +104,8 @@
           <a href="#">
             <img src="./image/designdecisions.jpg" alt="design decisions" width="370" />
             <h2>Inspiration has no Borders</h2>
-            <p>Веб-сайт</p>
-            <p>
+            <p class="portfolio-kind">Веб-сайт</p>
+            <p class="portfolio-text-about">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt voluptatibus
               laboriosam consequatur, culpa nesciunt animi repellat nam debitis consequuntur.
               Voluptatum eaque alias doloremque, delectus perferendis quibusdam fugit veniam esse?
@@ -111,8 +116,8 @@
           <a href="#">
             <img src="./image/magazine.jpg" alt="magazine" width="370" />
             <h2>Издание Limited Edition</h2>
-            <p>Дизайн</p>
-            <p>
+            <p class="portfolio-kind">Дизайн</p>
+            <p class="portfolio-text-about">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt voluptatibus
               laboriosam consequatur, culpa nesciunt animi repellat nam debitis consequuntur.
               Voluptatum eaque alias doloremque, delectus perferendis quibusdam fugit veniam esse?
@@ -123,8 +128,8 @@
           <a href="#">
             <img src="./image/tag.jpg" alt="tag" width="370" />
             <h2>Проект LAB</h2>
-            <p>Маркетинг</p>
-            <p>
+            <p class="portfolio-kind">Маркетинг</p>
+            <p class="portfolio-text-about">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt voluptatibus
               laboriosam consequatur, culpa nesciunt animi repellat nam debitis consequuntur.
               Voluptatum eaque alias doloremque, delectus perferendis quibusdam fugit veniam esse?
@@ -135,8 +140,8 @@
           <a href="#">
             <img src="./image/desktopapplications.jpg" alt="desktopapplications" width="370" />
             <h2>Growing Business</h2>
-            <p>Приложение</p>
-            <p>
+            <p class="portfolio-kind">Приложение</p>
+            <p class="portfolio-text-about">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt voluptatibus
               laboriosam consequatur, culpa nesciunt animi repellat nam debitis consequuntur.
               Voluptatum eaque alias doloremque, delectus perferendis quibusdam fugit veniam esse?
@@ -148,9 +153,9 @@
     <footer>
       <ul>
         <li>
-          <a href="./index.html" class="logo"> <span class="logo-web">Web</span> Studio </a>
-          <address>
-            <a href="">г. Киев, пр-т Леси Украинки, 26</a>
+          <a href="/" class="logo"> <span class="logo-web">Web</span> Studio </a>
+          <address class="address-footer">
+            <a class="address_map" href="">г. Киев, пр-т Леси Украинки, 26</a>
             <a href="mailto:info@devstudio.com">info@devstudio.com</a>
             <a href="tel:+380961111111">+38 096 111 11 11</a>
           </address>
@@ -170,7 +175,7 @@
           <button>Подписаться</button>
         </li>
       </ul>
-      <p>2020 | Developed by GoIT Students</p>
+      <p class="last-text">2020 | Developed by GoIT Students</p>
     </footer>
   </body>
 </html>

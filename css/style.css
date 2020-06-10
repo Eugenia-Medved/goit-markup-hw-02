@@ -1,23 +1,38 @@
+/* Основной цвет rgba(0, 0, 0, 0.8) */
+/* Цвет заголовков #000000 */
+/* Акцентный цвет #2196f3 */
+/* Цвет герой #ffffff */
+
 :root {
-  --primary-text-color: rgba(0, 0, 0, 0.8);
+  --primary-text-color: #757575;
   --title-text-color: #000000;
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
 }
+
 /* Глобальные стили */
 body {
   background-color: var(--primary-white-color);
   color: var(--primary-text-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
 }
 
 a {
   text-decoration: none;
   color: var(--primary-text-color);
+  font-style: normal;
+  letter-spacing: 0.02em;
 }
 
 ul {
   list-style-type: none;
 }
+
 /* Активности */
 .logo {
   color: var(--title-text-color);
@@ -35,16 +50,10 @@ ul {
 .logo:hover,
 .logo:focus,
 .link:hover,
-.link:focus {
-  color: var(--accent-color);
-}
-
-.link.current {
-  color: var(--accent-color);
-}
-
-.list-icon-item:hover,
-.list-icon-item:focus {
+.link:focus,
+.link.current,
+.address-nav a:hover,
+.address-nav a:focus {
   color: var(--accent-color);
 }
 
@@ -53,18 +62,80 @@ ul {
   color: var(--primary-white-color);
 }
 
-.title {
+/* Текст */
+
+nav a {
   color: var(--title-text-color);
+  font-weight: 500;
+  letter-spacing: 0.02em;
 }
 
-/* Текст */
+.address-nav a {
+  color: var(--primary-text-color);
+}
+
+.title-advantages {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
 
 .section-title {
   color: var(--title-text-color);
   font-family: Roboto;
-  font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.2;
   text-align: center;
+}
+
+.section-whot-do-we p,
+footer h3 {
+  color: var(--primary-white-color);
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section-team h3 {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.address_map {
+  color: var(--primary-white-color);
+}
+
+.last-text {
+  color: var(--primary-text-color);
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Портфолио */
+.portfolio h2 {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio-kind {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+}
+
+.portfolio-text-about {
+  color: var(--primary-white-color);
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
 }
