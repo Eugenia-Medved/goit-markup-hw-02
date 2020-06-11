@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <!-- Шапка -->
+    <!-- Header -->
     <header>
       <nav>
         <a href="/" class="logo"> <span class="logo-web">Web</span> Studio </a>
@@ -31,19 +31,19 @@
       </nav>
     </header>
     <main class="portfolio">
-      <h1>Портфолио</h1>
+      <h1 class="portfolio-title">Портфолио</h1>
       <ul>
-        <li><button type="button">Все</button></li>
-        <li><button type="button">Веб-сайты</button></li>
-        <li><button type="button">Приложения</button></li>
-        <li><button type="button">Дизайн</button></li>
-        <li><button type="button">Маркетинг</button></li>
+        <li><button class="button-portfolio current" type="button">Все</button></li>
+        <li><button class="button-portfolio" type="button">Веб-сайты</button></li>
+        <li><button class="button-portfolio" type="button">Приложения</button></li>
+        <li><button class="button-portfolio" type="button">Дизайн</button></li>
+        <li><button class="button-portfolio" type="button">Маркетинг</button></li>
       </ul>
       <ul>
         <li>
           <a href="#">
             <img src="./image/LaptopSkreen.jpg" alt="Laptop Skreen" width="370" />
-            <h2>Технокряк</h2>
+            <h2 class="portfolio-caption">Технокряк</h2>
             <p class="portfolio-kind">Веб-сайт</p>
             <p class="portfolio-text-about">
               Технокряк это современная площадка распространения коронавируса. Компании используют
@@ -54,7 +54,7 @@
         <li>
           <a href="#">
             <img src="./image/BasketballPlayers.jpg" alt="Basketball Players" width="370" />
-            <h2>Постер New Orlean vs Golden Star</h2>
+            <h2 class="portfolio-caption">Постер New Orlean vs Golden Star</h2>
             <p class="portfolio-kind">Дизайн</p>
             <p class="portfolio-text-about">
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur amet atque sunt
@@ -66,7 +66,7 @@
         <li>
           <a href="#">
             <img src="./image/LogoSeafood.jpg" alt="Logo Seafood" width="370" />
-            <h2>Ресторан Seafood</h2>
+            <h2 class="portfolio-caption">Ресторан Seafood</h2>
             <p class="portfolio-kind">Приложение</p>
             <p class="portfolio-text-about">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae, optio quo ipsum quis
@@ -78,7 +78,7 @@
         <li>
           <a href="#">
             <img src="./image/headphones.jpg" alt="headphones" width="370" />
-            <h2>Проект Prime</h2>
+            <h2 class="portfolio-caption">Проект Prime</h2>
             <p class="portfolio-kind">Маркетинг</p>
             <p class="portfolio-text-about">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur nesciunt vitae
@@ -90,7 +90,7 @@
         <li>
           <a href="#">
             <img src="./image/Boxes.jpg" alt="Boxes" width="370" />
-            <h2>Проект Boxes</h2>
+            <h2 class="portfolio-caption">Проект Boxes</h2>
             <p class="portfolio-kind">Приложение</p>
             <p class="portfolio-text-about">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro esse totam culpa iusto
@@ -103,7 +103,7 @@
         <li>
           <a href="#">
             <img src="./image/designdecisions.jpg" alt="design decisions" width="370" />
-            <h2>Inspiration has no Borders</h2>
+            <h2 class="portfolio-caption">Inspiration has no Borders</h2>
             <p class="portfolio-kind">Веб-сайт</p>
             <p class="portfolio-text-about">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt voluptatibus
@@ -115,7 +115,7 @@
         <li>
           <a href="#">
             <img src="./image/magazine.jpg" alt="magazine" width="370" />
-            <h2>Издание Limited Edition</h2>
+            <h2 class="portfolio-caption">Издание Limited Edition</h2>
             <p class="portfolio-kind">Дизайн</p>
             <p class="portfolio-text-about">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt voluptatibus
@@ -127,7 +127,7 @@
         <li>
           <a href="#">
             <img src="./image/tag.jpg" alt="tag" width="370" />
-            <h2>Проект LAB</h2>
+            <h2 class="portfolio-caption">Проект LAB</h2>
             <p class="portfolio-kind">Маркетинг</p>
             <p class="portfolio-text-about">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt voluptatibus
@@ -139,7 +139,7 @@
         <li>
           <a href="#">
             <img src="./image/desktopapplications.jpg" alt="desktopapplications" width="370" />
-            <h2>Growing Business</h2>
+            <h2 class="portfolio-caption">Growing Business</h2>
             <p class="portfolio-kind">Приложение</p>
             <p class="portfolio-text-about">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut sunt voluptatibus
@@ -153,7 +153,9 @@
     <footer>
       <ul>
         <li>
-          <a href="/" class="logo"> <span class="logo-web">Web</span> Studio </a>
+          <a href="/" class="logo">
+            <span class="logo-web">Web</span> <span class="logo-studio-white">Studio</span>
+          </a>
           <address class="address-footer">
             <a class="address_map" href="">г. Киев, пр-т Леси Украинки, 26</a>
             <a href="mailto:info@devstudio.com">info@devstudio.com</a>
@@ -161,7 +163,7 @@
           </address>
         </li>
         <li>
-          <h3>Присоединяйтесь</h3>
+          <h3 class="footer-title">Присоединяйтесь</h3>
           <ul>
             <li><a href="#">Instagram</a></li>
             <li><a href="#">Twitter</a></li>
@@ -170,7 +172,7 @@
           </ul>
         </li>
         <li>
-          <h3>Подпишитесь на рассылку</h3>
+          <h3 class="footer-title">Подпишитесь на рассылку</h3>
           <input type="text" />
           <button class="button-subscribe">Подписаться</button>
         </li>
